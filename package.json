@@ -24,7 +24,9 @@
     "url": "https://github.com/melissa-c/WellbeingTracker/issues"
   },
   "homepage": "https://github.com/melissa-c/WellbeingTracker",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.13.4",
+  },
   "devDependencies": {
     "browserify": "^10.0.0",
     "budo": "^4.0.0",
