@@ -1,21 +1,24 @@
-
 # WellbeingTracker
+An application to record your wellbeing. You can enter in the day and your symptoms
+and then retrieve the information entered using search.
 
-An application to record your wellbeing. you can enter in the day and your symptoms
-and then retrieve the information entered using search
-
-#Learning objectives:
-
-API's
+##Learning objectives:
+APIs
 Servers
 
-#MVP: 
+##Get all entries
+GET /v1/entries
 
-need to be able to display all entries, get an entry by an id and be able to 
-create a new entry
+##Get an entry by entryId
+GET /v1/entries/1
 
-#Future development:
-send the data to a person / GP of your choice.
+##Create a new entry
+POST /v1/entries
+
+##MVP:
+Display all entries, get an entry by entry id and create a new entry.
+
+
 
 
 
