@@ -1,34 +1,22 @@
 
 # WellbeingTracker
 
-it's a real sweet app
+An application to record your wellbeing. you can enter in the day and your symptoms
+and then retrieve the information entered using search
 
-## how
+#Learning objectives:
 
-### install
+API's
+Servers
 
-```
-git clone https://github.com/melissa-c/WellbeingTracker
-cd 
-npm install
-```
+#MVP: 
 
-## develop
+need to be able to display all entries, get an entry by an id and be able to 
+create a new entry
 
-```
-npm start
-```
+#Future development:
+send the data to a person / GP of your choice.
 
-browse to <http://localhost:9966/>.
 
-## test
 
-```
-npm test
-```
 
-## deploy
-
-```
-npm run deploy
-```
