@@ -1,2 +1,0 @@
-# WellbeingTracker
-Tracks your wellbeing
