@@ -4,8 +4,8 @@
   "description": "it's a real sweet app",
   "main": "index.js",
   "scripts": {
-    "start": "budo . -d --serve bundle.js --live",
     "build": "browserify . -o bundle.js -g uglifyify",
+    "start": "budo . -d --serve bundle.js --live",
     "test": "browserify test.js | smokestack | tap-spec",
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
     "push": "gh-pages -d dist",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/melissa-c/WellbeingTracker",
   "dependencies": {
-    "express": "^4.13.4",
+    "express": "^4.13.4"
   },
   "devDependencies": {
     "browserify": "^10.0.0",
