@@ -2,7 +2,7 @@
   "entries": [
     {"id": "1", "date": "18-01-2016", "symptoms": "tired, sore head", "additional info": "i think i can see colours" },
     {"id": "2", "date": "18-02-2016", "symptoms": "paranoid, grumpy", "additional info": "the cats, the cats are always watching" },
-    {"id": "3", "date": "1-03-2016", "symptoms": "broken toe, black eye, bruised ego": "additional info": "run in with a rampant rooster" },
-    {"id": "4", "date": "17-03-2016", "symptoms": "upset stomach, the sneezes": "additional info": "i cant stop..." }
+    {"id": "3", "date": "1-03-2016", "symptoms": "broken toe, black eye, bruised ego", "additional info": "run in with a rampant rooster" },
+    {"id": "4", "date": "17-03-2016", "symptoms": "upset stomach, the sneezes", "additional info": "i cant stop..." }
   ]
 }
