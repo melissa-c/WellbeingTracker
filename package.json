@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify . -o bundle.js -g uglifyify",
-    "start": "budo . -d --serve bundle.js --live",
+    "start": "node server.js",
     "test": "browserify test.js | smokestack | tap-spec",
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
     "push": "gh-pages -d dist",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/melissa-c/WellbeingTracker"
+    "url": "git+https://github.com/melissa-c/WellbeingTracker.git"
   },
   "author": "melissa-c",
   "license": "ISC",
@@ -25,7 +25,12 @@
   },
   "homepage": "https://github.com/melissa-c/WellbeingTracker",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "fs": "0.0.2",
+    "hyperscript": "^1.4.7",
+    "jquery": "^2.2.2",
+    "superagent": "^1.8.1"
   },
   "devDependencies": {
     "browserify": "^10.0.0",
@@ -36,5 +41,9 @@
     "tape": "^4.0.0",
     "uglifyify": "^3.0.1",
     "watchify": "^3.1.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
 }
