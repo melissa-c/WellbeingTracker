@@ -13,6 +13,7 @@ app.set('port', 9966)
 app.use(express.static(path.join(__dirname, 'client')))
 
 app.use('/v1/entries', routes)
+app.use('/', routes)
 
 // Listen for requests
 var server = app.listen(app.get('port'), function() {
