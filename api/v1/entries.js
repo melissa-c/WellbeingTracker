@@ -4,8 +4,9 @@ var fs = require('fs')
 var h = require('hyperscript')
 var bodyParser = require('body-parser')
 
-var app = express()
 var entries =[]
+router.use(bodyParser.json())
+router.use(bodyParser.urlencoded({ extended: true }))
 
 /*Get entries list*/
 router.get('/', function(req,res) {
@@ -19,15 +20,11 @@ fs.readFile(__dirname + '/../../data/db.json', 'utf8', function(err,data){
 })
 
 router.post('/', function(req,res) {
-  app.use(bodyParser.json({type: 'application/*+json' }))
-  var newEntry = req
-  console.log("here", req)
+  var newEntry = req.body
   res.send(entries)
   entries.push(newEntry)
   fs.writeFile(__dirname + '/../../data/db.json', JSON.stringify (entries))
-  console.log(newEntry)
   res.json(newEntry)
 })
-
 
 module.exports = router
