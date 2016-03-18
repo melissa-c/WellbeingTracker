@@ -10,32 +10,27 @@
     <main>
       <h1>Wellbeing Tracker</h1>
 
-      <h3>Symptoms </h3>
+      <h2>Entry</h2>
 
-      <form method="post" action="http://"><textarea name="comments" cols="50" rows="10" class="html-text-box">Enter your notes here...</textarea><br>
+      <form class="new_entry" id="new_entry" accept-charset="UTF-8" method="post">
+      <h3>Date</h3>
+      <input id="date" type="text" name="date" id="date" placeholder="DD-MM-YYYY"/>
+      <br>
+
+      <h3>Symptoms</h3>
+      <textarea id="symptoms" name="symptoms" cols="50" rows="10" placeholder="Enter your symptoms here..."></textarea>
+      <br>
 
       <h3>Medications</h3>
-      <form method="post" action="http://"><textarea name="comments" cols="50" rows="10" class="html-text-box">Enter your notes here...</textarea><br>
+      <textarea id="medications" name="medications" cols="50" rows="10" class="html-text-box" placeholder="Enter the medications you have taken here..."></textarea>
+      <br>
 
-      <input type="submit" value="Submit" class="html-text-box"></form>
+      <h3>Additional Information</h3>
+      <textarea id="info" name="info" cols="50" rows="10" class="html-text-box" placeholder="Enter any additional information here..."></textarea>
+      <br>
+
+      <input type="submit" name="submit" value="Submit">
+    </form>
     </main>
   </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title>WellbeingTracker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="index.css" rel="stylesheet" />
-  </head>
-  <body>
-    <main>
-      <h1>WellbeingTracker</h1>
-    </main>
-    <script src="bundle.js"></script>
-  </body>
-</html>
- -->
